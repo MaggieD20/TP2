@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1260px;
+    
+    background-image: url("../images/fleur.jpg");/*provient du site Pexel*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(49, 10, 89);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header,
+section,
+article {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/***********************************HEADER*****************************/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ecd6e6+0,ecd6e6+54,ecd6e6+54,ecd6e6+98&1+0,0.7+54,0.45+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(236, 214, 230, 1) 0%, rgba(236, 214, 230, 0.7) 54%, rgba(236, 214, 230, 0.46) 98%, rgba(236, 214, 230, 0.45) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 214, 230, 1) 0%, rgba(236, 214, 230, 0.7) 54%, rgba(236, 214, 230, 0.46) 98%, rgba(236, 214, 230, 0.45) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(236, 214, 230, 1) 0%, rgba(236, 214, 230, 0.7) 54%, rgba(236, 214, 230, 0.46) 98%, rgba(236, 214, 230, 0.45) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecd6e6', endColorstr='#73ecd6e6', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header h3 {
+    padding-bottom: 21.44px;
+}
+
+/*********************************MENU DE NAVIGATION*****************************/
+#menu {
+    position: fixed;
+    background-color: rgba(49, 10, 89, 0.849);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div nav {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    display: block;
+    height: 20px;
+    color: rgba(216, 173, 210, 0.932);
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+
+#menu a:hover {
+    color: rgb(143, 196, 221);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*************************************ARTICLE**************************/
+article {
+    width: 60%;
+    background-color: rgba(216, 173, 210, 0.932);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+article div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article div:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10px;
+    font-size: 1.3em
+}
+
+article div:nth-child(2n) p {
+    padding-right: 10%;
+    padding-left: 10px;
+
+}
+
+article img {
+    width: 115px;
+   
+}
+
+article div figure img:hover{
+     transform: scale(1.5);
+}
+
+article h2 {
+    margin: 20px;
+}
+
+/*****************************FOOTER******************************/
+footer {
+    color: #d8add2ee;
+    position: absolute;
+    top: 665%;
+    left: 17%;
+    right: 20%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    background-color: rgba(49, 10, 89, 0.849);
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a{
+    height: 10px;
+}
+footer a:hover {
+    color: rgb(143, 196, 221);;
+}
+h6{
+    padding: 10px;
+}
